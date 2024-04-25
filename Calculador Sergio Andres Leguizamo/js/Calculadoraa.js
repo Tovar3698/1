@@ -1,5 +1,5 @@
 function suma(num1, num2) {
-    let sumar = num1+num2;
+    let sumar = parseFloat(num1)+parseFloat(num2);
     return sumar;
 }
 
