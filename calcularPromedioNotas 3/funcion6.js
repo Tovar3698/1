@@ -8,8 +8,10 @@ const pornot = function (pnot, pporc) {
     let not = pnot;
     let porce = pporc;
     let rnot;
-    rnot = not * porce;
-    return rnot;
+    let resultado = ""
+    resultado += rnot = not * porce;
+    alert(resultado);
+    return resultado;
 }
 
 const suma = function (pnumUno, pnumDos, pnumTre) {
@@ -17,6 +19,8 @@ const suma = function (pnumUno, pnumDos, pnumTre) {
     let numDos = pnumDos;
     let numTre = pnumTre;
     let sumar;
-    sumar = numUno + numDos + numTre;
-    return sumar
+    let resultado = ""
+    resultado +=sumar = numUno + numDos + numTre;
+    alert(resultado);
+    return resultado
 }
