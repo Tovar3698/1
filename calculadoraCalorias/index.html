@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora de calorias</title>
+</head>
+<body>
+   
+    <script>
+        var genero= prompt("dijite tu genero: \n M \n F");
+        genero=String(genero);
+
+        var actividad;
+        var calorias;
+        
+        if(genero="M" || genero=="m" || genero=="F" || genero=="f"){
+
+            var peso = prompt("dijite tu peso en kilogramos: ");
+            peso=parseFloat(peso);
+
+            var altura= prompt("dijite tu altura en centimetros: ");
+            altura=parseFloat(altura);
+
+            var edad= prompt("dijite tu edad: ");
+            edad=parseFloat(edad);
+
+            var nivelActividad= prompt("dijite tu nivel de actividad: \n 1. sedentario \n 2. poco activo \n 3. activo \n 4. muy activo");
+            nivelActividad=String(nivelActividad);
+            
+            if(nivelActividad=="sedentario" || nivelActividad=="poco activo" || nivelActividad=="activo" || nivelActividad=="muy activo" || nivelActividad=="1" || nivelActividad=="2" || nivelActividad=="3" || nivelActividad=="4"){
+                if(3<edad && edad<18){
+                    if(genero=="M" || genero=="m"){
+                        if(nivelActividad=="sedentario" || nivelActividad=="1"){
+                            actividad=1.0
+                        }
+                        if(nivelActividad=="poco activo" || nivelActividad=="2"){
+                            actividad=1.13
+                        }
+                        if(nivelActividad=="activo" || nivelActividad=="3"){
+                            actividad=1.20
+                        }
+                        if(nivelActividad=="muy activo" || nivelActividad=="4"){
+                            actividad=1.42
+                        }
+                        calorias=66.47+(13.75*peso)+(5.003*altura)-(6.755*edad)*actividad;
+
+                        console.log("calorias a cosumir diariamente \n\n"+calorias)
+                    }
+                    if(genero=="F" || genero=="f"){
+                        if(nivelActividad=="sedentario" || nivelActividad=="1"){
+                            actividad=1.0
+                        }
+                        if(nivelActividad=="poco activo" || nivelActividad=="2"){
+                            actividad=1.16
+                        }
+                        if(nivelActividad=="activo" || nivelActividad=="3"){
+                            actividad=1.31
+                        }
+                        if(nivelActividad=="muy activo" || nivelActividad=="4"){
+                            actividad=1.56
+                        }
+                        calorias=655.1+(9.563*peso)+(1.850*altura)-(4.676*edad)*actividad;
+
+                        console.log("calorias a cosumir diariamente \n\n"+calorias)
+                    }
+    
+                }
+                if(18<edad && edad<85){
+                    if(genero=="M" || genero=="m"){
+                        if(nivelActividad=="sedentario" || nivelActividad=="1"){
+                            actividad=1.0
+                        }
+                        if(nivelActividad=="poco activo" || nivelActividad=="2"){
+                            actividad=1.11
+                        }
+                        if(nivelActividad=="activo" || nivelActividad=="3"){
+                            actividad=1.25
+                        }
+                        if(nivelActividad=="muy activo" || nivelActividad=="4"){
+                            actividad=1.48
+                        }
+                        calorias=66.47+(13.75*peso)+(5.003*altura)-(6.755*edad)*actividad;
+    
+                        console.log("calorias a cosumir diariamente \n\n"+calorias)
+                    }
+                    if(genero=="F" || genero=="f"){
+                        if(nivelActividad=="sedentario" || nivelActividad=="1"){
+                            actividad=1.0
+                        }
+                        if(nivelActividad=="poco activo" || nivelActividad=="2"){
+                            actividad=1.12
+                        }
+                        if(nivelActividad=="activo" || nivelActividad=="3"){
+                            actividad=1.27
+                        }
+                        if(nivelActividad=="muy activo" || nivelActividad=="4"){
+                            actividad=1.45
+                        }
+                        calorias=655.1+(9.563*peso)+(1.850*altura)-(4.676*edad)*actividad;
+
+                        console.log("calorias a cosumir diariamente \n\n"+calorias)
+                    }
+                    
+                }
+            }
+            
+        }else{
+            console.log("el valor ingresado no es valido");
+        }
+        
+    
+        
+    
+        
+    
+    </script>
+
+</body>
+</html>
