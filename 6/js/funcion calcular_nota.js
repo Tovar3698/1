@@ -18,5 +18,10 @@ const suma = function (pnumUno, pnumDos, pnumTre) {
     let numTre = pnumTre;
     let resultado 
     resultado = numUno + numDos + numTre;
-    return resultado
+    return resultado    
+}
+
+function nada (pp){
+    if (pp == null)
+    return alert ("no valido")
 }

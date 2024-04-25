@@ -9,20 +9,25 @@
 <body>
     <script>
         let not1 = parseFloat(prompt("Por favor ingrese la primera nota"));
+        if (not1 == null || not1 == "") {
+            alert("Por favor ingrese una nota");
+        }
+        nada(not1);
         let pornot1 = parseFloat(prompt("Por favor ingrese el porcentaje que corresponde a la primera nota (ejemplo: 20)"));
+        nada(pornot1)
         let not2 = parseFloat(prompt("Por favor ingrese la segunda nota"));
-        let pornot2 = parseFloat(prompt("Por favor ingrese el porcentaje que corresponde a la segunda nota (ejemplo: 30)"));
+        nada(not2)
+        let pornot2 = parseFloat(prompt("Por favor ingrese el porcentaje que corresponde a la segunda nota (ejemplo: 30)"))
+        nada(pornot2)
         let not3 = parseFloat(prompt("Por favor ingrese la tercera nota"));
+        nada(not3)
         let pornot3 = parseFloat(prompt("Por favor ingrese el porcentaje que corresponde a la tercera nota (ejemplo: 50)"));
-
+        nada(pornot3)
         let p1 = pornot1/100;
         let p2 = pornot2/100;
         let p3 = pornot3/100;
 
-        alert("La nota 1 es "+not1+" la cual tiene un porcentaje de "+pornot1+"% y es igual a "+pornot(not1,p1))
-        alert("La nota 2 es "+not2+" la cual tiene un porcentaje de "+pornot2+"% y es igual a "+pornot(not2,p2))
-        alert("La nota 3 es "+not3+" la cual tiene un porcentaje de "+pornot3+"% y es igual a "+pornot(not3,p3))
-        alert("La suma de las 3 notas con sus respectivos porcentajes es "+suma(pornot(not1,p1),pornot(not2,p2),pornot(not3,p3)))
+        alert("La nota 1 es "+not1+" la cual tiene un porcentaje de "+pornot1+"% y es igual a "+pornot(not1,p1)+"\nLa nota 2 es "+not2+" la cual tiene un porcentaje de "+pornot2+"% y es igual a "+pornot(not2,p2)+"\nLa nota 3 es "+not3+" la cual tiene un porcentaje de "+pornot3+"% y es igual a "+pornot(not3,p3)+"\nLa suma de las 3 notas con sus respectivos porcentajes es "+suma(pornot(not1,p1),pornot(not2,p2),pornot(not3,p3)))
     </script>
 </body>
 </html>
