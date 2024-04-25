@@ -7,7 +7,6 @@
 const pornot = function (pnot, pporc) {
     let not = pnot;
     let porce = pporc;
-    
     let resultado 
     resultado = not * porce;
     return resultado;
@@ -17,9 +16,7 @@ const suma = function (pnumUno, pnumDos, pnumTre) {
     let numUno = pnumUno;
     let numDos = pnumDos;
     let numTre = pnumTre;
-    
     let resultado 
     resultado = numUno + numDos + numTre;
-    
     return resultado
 }
