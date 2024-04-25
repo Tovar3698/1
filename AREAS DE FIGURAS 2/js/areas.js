@@ -7,7 +7,7 @@ function areaCuadrado(Plado){
     let lado = Plado; 
     
     let resultado1;
-      resultado1= lado * lado;     
+      resultado1= lado * lado;    
       alert("El  area del cuadrado es : "+ resultado1)                 
     return resultado1;
 }
@@ -31,4 +31,3 @@ function areaTriangulo(Plado3,Paltura){
 }
 
  
-
