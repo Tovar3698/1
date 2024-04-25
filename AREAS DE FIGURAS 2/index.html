@@ -9,28 +9,28 @@
 </head>
 <body>
     <script>
-        alert("AREAS DE DIVERSAS FIGURAS GEOMETRICAS")
-        alert("Operacion del area del cuadrado: lado*lado")
-        alert("Ingrese el valor del lado")
-        let resultado1 = prompt("Por favor ingrese el valor del lado");
-         
-        
-        alert("Operacion del area del Rectangulo: Lado*Altura")
-        let resultado2 = prompt("Por favor ingrese el valor del lado del rectangulo"); 
-        let resultado3=prompt("Por favor ingrese el valor de la Altura del rectangulo");
-        
-
-        
-        alert("Operacion del area del Triangulo: (Lado*Altura)/2")
-        let resultado4 = prompt("Por favor ingrese el valor del lado del triangulo"); 
-
-        
-        let resultado5=prompt("Por favor ingrese el valor de la altura del triangulo");
-       
     
-         areaCuadrado(resultado1)
-         areaRectangulo(resultado2,resultado3)
-         areaTriangulo(resultado4,resultado5)
+        let eleccion = -1;
+        while(eleccion<1 || eleccion>4){
+            eleccion=prompt("Escoja una opcion (1/2/3/4)"+"\n"+"1.Cuadrado"+"\n"+"2.Rectangulo"+"\n"+"3.Triangulo");
+
+            if (eleccion ==1){
+                let lado1=prompt("Ingrese valor del Lado:");
+                alert("El area del Cuadrado es: "+areaCuadrado(lado1));
+            }else if(eleccion==2){
+                let lado2=prompt("Ingrese valor del Lado:");
+                let altura=prompt("Ingrese valor de la Altura:");
+                alert("El area del Rectangulo es: "+areaCuadrado(lado2,altura));
+            }else if(eleccion==3){
+                let lado2=prompt("Ingrese valor del Lado:");
+                let altura2=prompt("Ingrese valor del Altura:");
+                alert("El area del Triangulo es: "+areaCuadrado(lado2,altura2));
+            }else{
+                alert("Opcion invalida, Ingrese una opcion valida.")
+                
+            }
+            
+        }
     </script>
 </body>
 </html>
